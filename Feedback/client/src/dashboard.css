@@ -1,0 +1,121 @@
+/* Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6f2ff; /* light blue */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #40008f;
+    width: 1440px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    border-radius: 50%;
+    height: 75px;
+  }
+  
+  /* Dashboard Title */
+  h1 {
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Feedback Table */
+  .feedback-table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-table thead {
+    background-color: #008c00;
+    color: white;
+  }
+  
+  .feedback-table th,
+  .feedback-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1.5px solid #000000;
+  }
+  
+  .feedback-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .feedback-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Controls (Sort and Filter Section) */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .control-item {
+    position: relative;
+  }
+  
+  .control-button {
+    background-color: #40008f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .control-button:hover {
+    background-color: #5a00c4;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 200px;
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+  
+  .control-item:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .dropdown p {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

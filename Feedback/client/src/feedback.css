@@ -1,0 +1,106 @@
+/* Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6f2ff; /* light blue */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* App Container */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #40008f;
+    width : 235%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    border-radius: 50%;
+    height: 75px;
+  }
+  
+  /* Title */
+  .form-title {
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Feedback Form */
+  .feedback-form {
+    margin: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form select,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .slider-question {
+    margin-top: 15px;
+  }
+  
+  .slider-question input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .slider-question span {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .feedback-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  .asterisk {
+    color: red;
+    margin-left: 5px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
