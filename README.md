@@ -1,5 +1,13 @@
 # User-Feedback-System
 
+Project Overview
+
+This is a User Feedback System built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to submit feedback for different courses offered by an e-learning platform (Mixer Academy) and enables admins to view, sort, and filter these feedbacks through a dashboard interface.
+
+There are two main roles in the system:
+1. User: Can access the feedback form and submit their feedback.
+2. Admin: Can access the dashboard to view submitted feedbacks, sort them, and apply filters.
+
 Steps to Run this project.
 
 Step 1. Clone from GitHub repository
