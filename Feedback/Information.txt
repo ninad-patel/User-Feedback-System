@@ -1,0 +1,37 @@
+System Architecture :-
+
+(A) Frontend (React - client/) 
+
+1. FeedbackForm.js
+    a. Presents a feedback form to the user.
+    b. Contains 12 slider-based questions.
+    c. Inputs: name, username, email, enrollment ID, course, optional message.
+    d. Validates required fields before submission.
+    e. On submit, sends data via POST request to http://localhost:5000/feedback.
+
+2. Dashboard.js
+    a. Accessible only by the admin.
+    b. Fetches feedback from the server via GET request.
+    c. Displays data in a table format with the columns: Name, Username, Email, Enrollment ID, Course, Average Feedback %, Message, Timestamp
+    d. Allows sorting by various fields and filtering by: Feedback percentage ranges (e.g., 0–25%, 51–75%) and Course types
+
+(B) Backend (Node.js + Express - server/)
+
+1. Server Initialization (index.js)
+    a. Connects to local MongoDB at mongodb://localhost:27017/feedback
+    b. Uses cors() to communicate with react app and express.json() middleware to 
+
+2. Schema and Model
+    a. Stores user feedback in MongoDB using Mongoose
+    b. Fields: name, username, email, enrollmentId, course, feedback (array), message, createdAt
+
+3. API Routes
+    a. POST /feedback → Saves a new feedback document to MongoDB
+    b. GET /feedback → Returns all feedback documents (latest first)
+
+System Flow :-
+
+1. User accesses the form on the client side and submits feedback.
+2. The server handles the POST request and stores feedback in MongoDB.
+3. Admin accesses the dashboard which fetches and displays feedback data using GET requests.
+4. Sorting and filtering functionalities are implemented client-side for dashboard usability.
